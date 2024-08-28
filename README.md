@@ -1,7 +1,5 @@
 # La Orden 💡
 
----
-
 Repositorio del segundo semenstre
 # Catedra 📄
 
