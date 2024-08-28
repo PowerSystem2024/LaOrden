@@ -1,19 +1,19 @@
-#La Orden 💡
+# La Orden 💡
 
 ---
 
 Repositorio del segundo semenstre
-#Catedra 📄
+# Catedra 📄
+
+--
+
+Programacion II
+# Integrantes 📄
 
 ---
 
 Programacion II
-#Integrantes 📄
-
----
-
-Programacion II
-#Integrantes 📄
+# Integrantes 📄
 
 ---
 
