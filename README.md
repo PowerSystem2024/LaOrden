@@ -14,3 +14,5 @@ Programacion II
 - Navarrete Santiago - 11173 
 - Ortiz Javier - 11186 
 - Ortiz Nicolas - 9596 
+
+*In omnem veritatem*
