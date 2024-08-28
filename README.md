@@ -1,10 +1,12 @@
 # La Orden 💡
 
-## Casa de estudios 
+## Casa de estudios 🎓
 Universidad Tecnológica Nacional
-## Catedra 📄
+
+## Catedra 📓
 Programacion II
-## Integrantes 📄
+
+## Integrantes 👤
 
 - Enriquez Leandro - 11066 
 - Fragueiro Luciana - 11081 
