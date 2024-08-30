@@ -11,7 +11,7 @@ for(let i = 0; i < autos.length; i++){
 }
 
 //Modificamos los elementos del arreglo
-autos[1] = 'Volvo';
+autos[1] = 'Volvo'; 
 console.log(autos[1]);
 
 //Agregamos nuevos valores al arreglo
@@ -31,6 +31,6 @@ console.log(Array.isArray(autos));
 
 console.log(autos instanceof Array); //preguntamos si la variable es una instancia de la clase Array
 
-
+a
 
 
