@@ -34,8 +34,11 @@ else:
 # Preguntamos cuantos elementos tiene una lista
 print(len(nombres))  # le pasamos como parametro la lista
 
-# Agregamos un elemento
+# Agregamos un elemento, una lista puede contener cualquier tipo de dato, inclusive una lista dentro de otra lista
 nombres.append("Maria")
+nombres.append([1,2,3])
+nombres.append(True)
+
 print(nombres)
 
 # insertar un elemento en un indice especifico
@@ -57,11 +60,31 @@ print(nombres)
 # Eliminar todos los elementos
 nombres.clear()
 print(nombres)
-'''
+
 #Eliminar el elemento lista
-del nombres
-print(nombres)
-'''
+#del nombres
+#print(nombres)
+
+# Concatenar listas
+lista1 = [1, 2, 3, 1]
+lista2 = [4, 5, 6]
+lista3 = lista1+lista2
+print(lista3)
+
+# agregar elementos en lista
+lista3.extend([7, 8, 9])
+print(lista3)
+
+#Funcion para ubicar el indice del valor ingresado
+print(lista3.index(5))
+
+#Saber cuantos valores repetidos hay en la lista
+print(lista3.count(1))
+
+#Invertir una lista
+lista3.reverse()
+print(lista3)
+
 # TUPLAS es una listsa pero inmutable, funciona como un constante
 # Las mismas son inmutables
 
@@ -99,3 +122,11 @@ cocinaLista[0] = "Plato"
 cocina = tuple(cocinaLista)
 
 print('\n', cocina)
+
+#Una tupla acepta varios tipos de datos, incluso una tupla dentro de otra
+tupla= (4,6.7,[1,2], "Hola")
+print(tupla)
+
+#Tambien asi como en las listas paodemos preguntar si un elemento esta o no esta dentro de la misma
+print(4 in tupla)
+print ("Hola" not in tupla)
