@@ -37,7 +37,7 @@ print(len(diccionario))
 print(diccionario)
 
 # Acceder a un diccionario con la llave(key)
-print(diccionario[ÌDE])
+print(diccionario['IDE'])
 
 # Otra forma de recuperar un elemento
 print(diccionario.get('POO'))
