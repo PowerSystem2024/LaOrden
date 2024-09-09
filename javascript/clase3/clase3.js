@@ -77,12 +77,3 @@ function cambiarValorObjeto(p1){
 
 cambiarValorObjeto(persona);
 console.log(persona);
-
-
-
-
-
-
-
-
-

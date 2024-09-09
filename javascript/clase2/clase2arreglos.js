@@ -30,7 +30,3 @@ console.log(autos);
 console.log(Array.isArray(autos));
 
 console.log(autos instanceof Array); //preguntamos si la variable es una instancia de la clase Array
-
-a
-
-

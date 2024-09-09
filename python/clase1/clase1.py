@@ -123,3 +123,4 @@ for elemento in tupla:
     if elemento < 5:
         lista.append(elemento)
 print(lista)
+

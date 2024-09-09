@@ -117,4 +117,3 @@ print(4 in tupla)  # accion booleana, su respuesta es de tipo booleana
 # Lo que podemos usar dentro de tuplas son: index, coun, len
 # En tuplas se puede convertir de tupla a lista y de lista a tupla
 #  
-
