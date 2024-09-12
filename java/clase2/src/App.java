@@ -2,6 +2,7 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class App {
+    @SuppressWarnings({ "unused", "resource" })
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         // Ejercicio 1: Leer un numero y mostrar su cuadrado, repetir el proceso hasta
@@ -33,5 +34,10 @@ public class App {
         } while (numero != 0);
 
         JOptionPane.showMessageDialog(null, "Fin del ciclo");
+    }
+
+    @Override
+    public String toString() {
+        return "App []";
     }
 }
