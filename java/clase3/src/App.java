@@ -3,6 +3,7 @@ import javax.swing.JOptionPane;
 import java.util.Random;
 
 public class App {
+    @SuppressWarnings("resource")
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
 
