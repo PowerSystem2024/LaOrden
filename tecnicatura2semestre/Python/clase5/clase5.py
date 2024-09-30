@@ -77,3 +77,29 @@ def listarNombres(*nombres):
         print(nombre)
 listarNombres("Lucas", "Jose", "Claudia")
 listarNombres("Marcos", "Daniel", "Romina")
+
+
+def listarTerminos(**terminos):
+    for llave, valor in terminos.items():
+        print(f'{llave} : {valor}')
+
+listarTerminos(IDE='Integrated Development Environment', PK='Primary key')
+
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+nombres2 = ["Tito", "Pedro", "Carlos"]
+desplegarNombres(nombres2)
+desplegarNombres("Carla")
+desplegarNombres((10, 11))
+
+
+
+# Funciones recursivas
+def factorial(numero):
+    if numero ==1:
+        return 1 
+    else:
+        return numero * factorial(numero-1)
+resultado = factorial(5)
+print(f"El factorial de 5 es: {resultado}")
