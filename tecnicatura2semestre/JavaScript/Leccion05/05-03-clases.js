@@ -1,9 +1,24 @@
 //let persona3 = new Persona('Carla', 'Ponce'); esto no se debe hacer
 
 class Persona { //Clase padre
+    static contadorPersonas = 0; //atributo estatico
+    //email = 'Valor default email'; //atributo no estatico
+
+    static get MAX_OBJ(){ //este metodo simula una constante
+        return 5;
+    }
+
     constructor(nombre, apellido){
         this._nombre = nombre;
         this._apellido = apellido;
+        if(Persona.contadorPersonas < Persona.MAX_OBJ){
+            this.idPersona = ++Persona.contadorPersonas;
+        }
+        else{
+            console.log('Se ha superado el maximo de objetos permitidos');
+        }
+        
+        //console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
     }
     get nombre(){
         return this._nombre;
@@ -18,7 +33,15 @@ class Persona { //Clase padre
         this._apellido = apellido;
     }
     nombreCompleto(){
-        return this._nombre+' '+this._apellido;
+        return this.idPersona+' '+this._nombre+' '+this._apellido;
+    }
+
+    static saludar(){
+        console.log('Saludos desde este metodo static')
+    }
+
+    static saludar2(persona){
+        console.log(persona.nombre + ' ' +persona.apellido);
     }
     //sobreescribiendo el metodo de la clase padre(object)
     toString(){ //regresa un string
@@ -71,6 +94,27 @@ console.log(empleado1.nombreCompleto());
 //Object.prototype.toString esta es la manera de acceder a atributos y metodos de manera dinamica
 console.log(empleado1.toString());
 console.log(persona1.toString());
+
+// persona1.saludar(); no se utiliza desde el objeto
+
+Persona.saludar();
+Persona.saludar2(persona1);
+
+Empleado.saludar();
+Empleado.saludar2(empleado1);
+
+//console.log(persona1.contadorObjetosPersona);
+
+console.log(Persona.contadorObjetosPersona);
+console.log(Empleado.contadorObjetosPersona);
+
+console.log(persona1.email);
+console.log(empleado1.email);
+//console.log(Persona.email); no puede acceder desde la clase
+
+console.log(persona1.toString());
+console.log(persona2.toString());
+console.log(empleado1.toString());
 
 
 
