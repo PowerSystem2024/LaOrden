@@ -2,13 +2,13 @@
 class Persona:
 
 
-    def __init__(self, nombre, apellido, edad,*args, **kwargs):
+    def __init__(self, nombre, apellido, edad, dni, *args, **kwargs):
        self.nombre = nombre
-        self.apellido = apellido
-        self.edad = edad
-        self._dni = dni  #este atributo esta encapsulado de una manera sugerida
-        self.args = args
-        self.kwargs = kwargs
+       self.apellido = apellido
+       self.edad = edad
+       self._dni = dni  #este atributo esta encapsulado de una manera sugerida
+       self.args = args
+       self.kwargs = kwargs
 
 def mostrar_detalle(self):
         print(f'La clase Persona tiene los siguientes datos: {self.nombre} {self.apellido} {self._dni} Su edad es: {self.edad}, la direccion es : {self.args}, los datos importantes son: {self.kwargs}')
