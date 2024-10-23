@@ -1,0 +1,125 @@
+Sintaxis similares entre Java y JavaScript
+Operadores simplificados/compuestos
++=
+-=
+*=
+/=
+%=
+**=
+
+Operadores Aritmeticos
++
+-
+*
+/
+% //residuo
+** //exponente
+Operadores de Asignación
+=
+los operadores simplificados también asignan
+
+Operadores de comparación (bool)
+== revisa el valor sin importar el tipo
+=== revisa el valor y el tipo también
+
+
+Documentar
+// = Para una línea de comentario
+/* */ = para multiples líneas de comentario
+
+Secuencias de Escape
+\' = Mostrar una comilla simple dentro de una cadena en la salida de información
+\'' = Mostrar doble comilla dentro de una cadena en la salida de información
+\\ = Barra invertida, diagonal inversa, es para mostrar una back slash
+\n = esto es un salto de linea
+\r = retorno
+\t = Tabulación
+\b = retroceso
+\f = Salto de pagina
+
+Operador de Aumento
+++
+ejemplo: Let z = ++a; //preincremento
+ejemplo: z = a++; //posincremento
+
+Operador de Decremento
+--
+ejemplo: Let z = --a; //predencremento
+ejemplo: z = a--; //posdecremento
+
+Operador distinto, diferente (Bool)
+!= comprueba valores sin revisar el tipo
+!== comprueba el valor y también el tipo
+
+Operadores relacionales (bool)
+>
+<
+<=
+>=
+
+ABSTRACT
+break
+char
+debugger
+double
+export*
+finally
+goto
+in
+let*
+null
+public
+super*
+throw
+try
+volatile
+ARGUMENTS
+byte
+class*
+default
+else
+extends*
+float
+if
+instaceof
+long
+package
+return
+switch
+throws
+typeof
+while
+AWAIT*
+case
+const
+delete
+enum*
+false
+for
+implements
+int
+native
+private
+short
+synchronized
+transient
+var
+with
+BOOLEAN
+catch
+continue
+do
+eval
+final
+function
+import*
+interface
+new
+protected
+static
+this
+true
+void
+yield
+
+
