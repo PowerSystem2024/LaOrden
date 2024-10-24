@@ -1,7 +1,7 @@
 /*ejerjcicio 6: perdir numeros hasta que se teclee
  * un 0, mostrar la suma de todos los numeros introducidos
  */
-package Java.Leccion2.EjercicioCiclos06;
+package Leccion2.EjercicioCiclos06;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Java.Leccion2.EjercicioCiclos01;
+package Leccion2.EjercicioCiclos01;
 
 import java.util.Scanner;
 /*ejercicio 1: leer un numero y mostrar su cuadrado, repetir el

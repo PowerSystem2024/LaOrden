@@ -3,7 +3,7 @@
  * primero lo haremos con la clase Scanner
  * Luego con la clase JOptionPane
  */
-package Java.Leccion2.EjercicioCiclos03;
+package Leccion2.EjercicioCiclos03;
 import javax.swing.JOptionPane;
 public class Ejercicio03 {
     public static void main(String[] args) {

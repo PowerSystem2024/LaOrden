@@ -4,7 +4,7 @@ y luego ir pidiendo numeros indicando "Es mayor" o
 "es menor" segun sea yaor o menor con respecto a N
 El proceso termina cuando el usuario acierta y mostramos 
 el numero de intentos hechos*/
-package Java.Leccion2.EjercicioCiclos05;
+package Leccion2.EjercicioCiclos05;
 import java.util.Scanner;
 public class Ciclos05 {
 public static void main(String[] args) {

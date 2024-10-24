@@ -1,5 +1,5 @@
 /*ejc7: pedir numeros hasta que se introduzca uno negativo y calcular la media */
-package Java.Leccion2.EjercicioCiclos07;
+package Leccion2.EjercicioCiclos07;
 
 import javax.swing.JOptionPane;
 

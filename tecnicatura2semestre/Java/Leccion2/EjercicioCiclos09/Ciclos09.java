@@ -1,4 +1,4 @@
-package Java.Leccion2.EjercicioCiclos09;
+package Leccion2.EjercicioCiclos09;
 
 /*Ejercicio9: Pedir el dia, mes y año de una fecha e
  indicar si la fecha es correcta. Suponiendo que
