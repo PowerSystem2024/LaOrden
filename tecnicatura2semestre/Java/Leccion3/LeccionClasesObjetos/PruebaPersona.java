@@ -1,4 +1,4 @@
-package Java.Leccion3.LeccionClasesObjetos;
+package Leccion3.LeccionClasesObjetos;
 
 public class PruebaPersona {
     public static void main(String[] args) {

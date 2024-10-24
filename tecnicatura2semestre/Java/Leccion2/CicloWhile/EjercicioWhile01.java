@@ -1,4 +1,4 @@
-package Java.Leccion2.CicloWhile;
+package Leccion2.CicloWhile;
 public class EjercicioWhile01 {
     public static void main(String[] args) {
         var conteo = 0; //inferencia de tipos

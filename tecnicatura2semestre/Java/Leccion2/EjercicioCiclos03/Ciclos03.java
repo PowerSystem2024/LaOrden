@@ -1,4 +1,4 @@
-package Java.Leccion2.EjercicioCiclos03;
+package Leccion2.EjercicioCiclos03;
 
 import java.util.Scanner;
 
