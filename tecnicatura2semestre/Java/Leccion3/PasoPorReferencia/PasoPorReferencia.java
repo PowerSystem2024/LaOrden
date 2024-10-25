@@ -1,6 +1,6 @@
 package Leccion3.PasoPorReferencia;
 
-import Clases.Persona;
+import Leccion3.LeccionClasesObjetos.Persona;
 
 public class PasoPorReferencia {
     public static void main(String[] args){
