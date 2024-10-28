@@ -1,13 +1,20 @@
 <script setup>
 
 //puro js
+import DatosPersonales from './components/DatosPersonales.vue';
 import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue';
 import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
   <!--html-->
   <header>
+    <!-- Barra de Navegación -->
+     <NavBar></NavBar>
+     <!-- Componente de Datos Personales  -->
+      <DatosPersonales></DatosPersonales>
+
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
@@ -17,6 +24,12 @@ import TheWelcome from './components/TheWelcome.vue'
 
   <main>
     <TheWelcome />
+
+    <section id="educacion"><h2> Educacion - Cursos</h2></section>
+    <section id="experiencia"><h2> Experiencia </h2></section>
+    <section id="proyectos"><h2> Proyectos </h2></section>
+    <section id="habilidades"><h2> Habilidades </h2></section>
+    <section id="intereses"><h2> Intereses </h2></section>
   </main>
 </template>
 
