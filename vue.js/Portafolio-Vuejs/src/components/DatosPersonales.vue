@@ -1,8 +1,8 @@
 <script setup>
 
 
-const title = 'Ortiz Nicolas';
-const descripcion = 'Estudiante de Tecnicatura en Programacion - UTN';
+const title = 'La Orden';
+const descripcion = 'Estudiantes de Tecnicatura en Programacion - UTN';
 const residencia = 'San Rafael, Mendoza. Argentina';
 const presentacion = '¡Bienvenidos a mi portfolio!';
 const redesSociales = [

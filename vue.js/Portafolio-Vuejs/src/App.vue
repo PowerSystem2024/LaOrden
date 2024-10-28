@@ -2,6 +2,7 @@
 
 //puro js
 import DatosPersonales from './components/DatosPersonales.vue';
+import Educacion from './components/Educacion.vue';
 import HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue';
 import TheWelcome from './components/TheWelcome.vue'
@@ -25,7 +26,9 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <TheWelcome />
 
-    <section id="educacion"><h2> Educacion - Cursos</h2></section>
+    <section id="educacion"><h2> Educacion - Cursos</h2>
+      <Educacion />
+    </section>
     <section id="experiencia"><h2> Experiencia </h2></section>
     <section id="proyectos"><h2> Proyectos </h2></section>
     <section id="habilidades"><h2> Habilidades </h2></section>
