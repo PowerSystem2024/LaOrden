@@ -22,7 +22,7 @@ while True:
         telefono = input('Digite el número de teléfono')
         if nombre not in agenda:
             agenda[nombre] = telefono
-            prunt('Contacto creado correctamente')
+            print('Contacto creado correctamente')
         else:
             print('El contacto con este nombre ya existe')
     elif opcion == 2:

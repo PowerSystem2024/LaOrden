@@ -2,10 +2,8 @@
 # utilizando argumentos variables *args como parametro de la funcion y agregar como restulado
 # la suma de todo los valres pasados como argumentos.
 
-
-
 def sumar_valor(*args):
-    resultad = 0
+    resultado = 0
     for valor in args:
         resultado += valor
     return resultado

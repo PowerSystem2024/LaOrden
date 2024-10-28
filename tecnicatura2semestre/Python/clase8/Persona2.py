@@ -5,41 +5,44 @@ class Persona2:
         self._edad = edad
 
     def mostrar_detalles(self):
-        print(f'Los datos a mostrar son los siguientes:{self._nombre} {self._apellido} {self._edad}')
+        print(f'Los datos a mostrar son los siguientes:{
+              self._nombre} {self._apellido} {self._edad}')
+
     @property
-    def nombre(self): #metodo getter
+    def nombre(self):  # metodo getter
         return self._nombre
     print('Estamos utilizando el metodo get')
 
     @nombre.setter
-    def nombre(self, nombre): # metodo setter
+    def nombre(self, nombre):  # metodo setter
         print('Estamos utilizando el metodo set')
-        self._nombre = nombre   
-    
+        self._nombre = nombre
+
     @property
-    def apellido(self): 
+    def apellido(self):
         return self._apellido
-    
+
     @apellido.setter
     def apellido(self, apellido):
         self._apellido = apellido
-    
+
     @property
     def edad(self):
         return self._edad
-    
+
     @edad.setter
     def edad(self, edad):
         self._edad = edad
-    
+
     def __del__(self):
         print(f'Persona2: {self._nombre} {self._apellido} {self._edad}')
-    
+
+
 if __name__ == '__main__':
     persona1 = Persona2('Ariel', 'Betancud', 41)
-    print(persona1.nombre) # llamamos al metodo getter
+    print(persona1.nombre)  # llamamos al metodo getter
 
-    persona1.nombre = 'Lucas' # metodo setter
+    persona1.nombre = 'Lucas'  # metodo setter
     print(persona1.nombre)
     print(persona1.mostrar_detalles())
 # atributo read-only seria la edad porque no tiene el metodo set

@@ -10,5 +10,5 @@ lista = []
 for i in cadena:
     if i not in lista:
         lista.append(i)
-printf(f'Lista de caracteres sin repetir ninguno: ')
-printf(f'{lista}')
+print(f'Lista de caracteres sin repetir ninguno: ')
+print(f'{lista}')

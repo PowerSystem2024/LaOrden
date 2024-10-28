@@ -17,7 +17,7 @@ show(person[0], person[1])
 show(*person)
 person2 = ('Osvaldo', 'Giordanini')
 show(*person2)
-person3 = {'lastname': 'Lucero', 'name', 'Natalia'}
+person3 = {'lastname': 'Lucero', 'name': 'Natalia'}
 show(**person3)
 
 
@@ -38,8 +38,8 @@ alongP = [p for p in names if p[0] == 'P']
 print(alongP)
 
 
-bottleC = [{"name": "Quilmes", "country", "Arg"},
-            {"name": "Corona", "country", "Mx"}
+bottleC = [{"name": "Quilmes", "country": "Arg"},
+            {"name": "Corona", "country": "Mx"}
             {"name": "Stella Artois", "country", "Belgium"}
             ]
 

@@ -5,6 +5,7 @@ class Cubo:
     volumen: ancho * altura * profundidad
     que el usuario ingrese los valores
     """
+
     def __init__(self, ancho, altura, profundidad):
         self.ancho = ancho
         self.altura = altura
@@ -12,7 +13,8 @@ class Cubo:
 
     def calcular_volumen(self):
         return self.ancho * self.altura * self.profundidad
-    
+
+
 ancho = int(input('Digite el ancho del cubo: '))
 altura = int(input('Digite la altura del cubo: '))
 profundidad = int(input('Digite la profundidad del cubo: '))

@@ -13,13 +13,13 @@ mi_funcion() # Estamos llamando a la funcion
 numero2 = int(input("Ingrese un numero: "))
 lista2 = []
 for i in range(1, 11):
-    lista.append(i*numero)
+    lista2.append(i*numero2)
 
-print(f'Tabla de multiplicar del {numero}: ')
-print(f'{lista}')
+print(f'Tabla de multiplicar del {numero2}: ')
+print(f'{lista2}')
 
-for indice, i in enumerate(lista):
-    print(f'{numero} x {i} = {lista[indice]}')
+for indice, i in enumerate(lista2):
+    print(f'{numero2} x {i} = {lista2[indice]}')
 
 
 # Ejercicio 7: Juego adivina el número

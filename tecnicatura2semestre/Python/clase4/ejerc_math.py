@@ -12,7 +12,7 @@ lista10 = []
 
 for elemento in tupla:
     if elemento < 5:
-        lista.append(elemento)
+        lista10.append(elemento)
 print(lista10)
 
 # Ejercicio de matematica para sacar la raiz cuadrada de un número positivo
