@@ -1,4 +1,4 @@
-package Java.Leccion2.EjercicioCiclos02;
+package Leccion2.EjercicioCiclos02;
 
 import javax.swing.JOptionPane;
 

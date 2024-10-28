@@ -1,8 +1,8 @@
-package Java.Leccion3.LeccionClasesObjetos;
+package Leccion3.LeccionClasesObjetos;
 
 public class Persona {
 //atributos de la clase (caracteristicas)
-String nombre;
+public String nombre;
 String apellido;
 
 //Metodos de la clase (acciones)

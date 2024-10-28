@@ -1,4 +1,4 @@
-package Java.Leccion4;
+package Leccion4;
 
 public class Aritmetica {
     //atributos de la clase

@@ -3,7 +3,7 @@
  * Lo hacemos primero con la clase Scanner
  * luego con la clase JOptions
  */
-package Java.Leccion2.EjercicioCiclos04;
+package Leccion2.EjercicioCiclos04;
 import java.util.Scanner;
 public class Ciclos04 {
 public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Java.Leccion2.EjercicioCiclos02;
+package Leccion2.EjercicioCiclos02;
 
 import java.util.Scanner;
 //ejercicio2 leer un numero e identificar si es positivo
