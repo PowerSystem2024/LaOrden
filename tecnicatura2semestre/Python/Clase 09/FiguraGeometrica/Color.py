@@ -11,4 +11,4 @@ class Color:
         self._color = color
 
     def __str__(self):
-        return f'Color [color: {self._color}]'
+        return f"Color: {self._color}"
