@@ -11,11 +11,11 @@ public class AcercarseAlNumero {
         int rondas = 5;
 
         System.out.println("¡Bienvenido al juego Acercarse al Número!");
-        
+
         for (int i = 1; i <= rondas; i++) {
             // Generar número secreto para la ronda
             int numeroSecreto = random.nextInt(100) + 1; // Número entre 1 y 100
-            
+
             System.out.print("Introduce un número entre 1 y 100: ");
             int numeroJugador = scanner.nextInt();
 
@@ -25,7 +25,7 @@ public class AcercarseAlNumero {
 
             // Asignar puntos según la distancia
             if (distancia == 0) {
-                puntosRonda = 30;  // 10 puntos básicos + 20 de bonus por acertar
+                puntosRonda = 30; // 10 puntos básicos + 20 de bonus por acertar
                 System.out.println("¡Has acertado el número secreto! Obtuviste un bonus de 20 puntos.");
             } else if (distancia <= 5) {
                 puntosRonda = 10;
@@ -38,7 +38,8 @@ public class AcercarseAlNumero {
             }
 
             // Mostrar resultados de la ronda
-            System.out.println("Tu número fue " + numeroJugador + ". Estabas a " + distancia + " unidades del número secreto (" + numeroSecreto + ").");
+            System.out.println("Tu número fue " + numeroJugador + ". Estabas a " + distancia
+                    + " unidades del número secreto (" + numeroSecreto + ").");
             System.out.println("Obtienes " + puntosRonda + " puntos en esta ronda.");
 
             // Acumular puntos en el puntaje total
@@ -47,6 +48,7 @@ public class AcercarseAlNumero {
 
         // Mostrar el puntaje total al finalizar el juego
         System.out.println("Tu puntaje total es: " + puntajeTotal + ". ¡Felicidades!");
+
+        scanner.close();
     }
 }
-

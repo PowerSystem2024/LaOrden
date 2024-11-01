@@ -8,11 +8,11 @@ public class Bingo {
     public void jugar() {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        
+
         System.out.print("¿Cuántos jugadores hay? ");
         numeroJugadores = scanner.nextInt();
         System.out.println();
-        
+
         for (int jugador = 1; jugador <= numeroJugadores; jugador++) {
             System.out.println("Tablero: " + jugador);
             tablero = new int[3][3];
@@ -32,7 +32,7 @@ public class Bingo {
             }
             System.out.println();
         }
-        
+
         // Comienza el juego
         System.out.println("----------------------------");
         System.out.println("Para tirar un número presiona ENTER, para salir escribe 'BINGO'.");
@@ -47,10 +47,11 @@ public class Bingo {
                 int numAzar = random.nextInt(98) + 1; // Generar un número aleatorio entre 1 y 98
                 System.out.println("Número tirado: " + numAzar);
             }
-            
+
         } while (!seguir.equals("bingo"));
 
         System.out.println("El juego ha finalizado, ¡felicitaciones al ganador!");
+
+        scanner.close();
     }
 }
-
