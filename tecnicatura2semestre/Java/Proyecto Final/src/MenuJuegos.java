@@ -9,7 +9,7 @@ public class MenuJuegos {
     public static void mostrarMenu() {
         Scanner scanner = new Scanner(System.in);
         int opcion;
-
+        System.out.println("------------------------------");
         System.out.println("¡Bienvenido al menú de juegos!");
         System.out.println("Seleccione un juego:");
         System.out.println("1. Dados");
@@ -42,39 +42,6 @@ public class MenuJuegos {
                 mostrarMenu(); // Recursión para volver al menú en caso de opción inválida
                 break;
         }
-        
         scanner.close();
-    }
-}
-
-// Clase Dados (Hecho por Santi)
-class Dados {
-    public void jugar() {
-        System.out.println("Jugando a los Dados...");
-        // Lógica del juego de Dados
-    }
-}
-
-// Clase AcercarseAlNumero (Hecho por Facu)
-class AcercarseAlNumero {
-    public void jugar() {
-        System.out.println("Jugando a Acercarse al número...");
-        // Lógica del juego Acercarse al Número
-    }
-}
-
-// Clase Bingo (Hecho por Lu)
-class Bingo {
-    public void jugar() {
-        System.out.println("Jugando al Bingo...");
-        // Lógica del juego Bingo
-    }
-}
-
-// Clase RuletaRusa (Hecho por Leandro)
-class RuletaRusa {
-    public void jugar() {
-        System.out.println("Jugando a la Ruleta rusa...");
-        // Lógica del juego Ruleta Rusa
     }
 }
