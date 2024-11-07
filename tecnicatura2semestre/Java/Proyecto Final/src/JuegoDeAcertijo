@@ -19,10 +19,10 @@ public class JuegoDeAcertijo {
             intento = scanner.nextLine();
             
             // Verificar si el usuario quiere salir
-            if (intento.equals("salir")) {
+            if (intento.equalsIgnoreCase("salir")) { // Ignorar mayúsculas/minúsculas
                 System.out.println("Has decidido salir del juego.");
                 continuar = false;
-            } else if (intento.equals(respuestaCorrecta)) {
+            } else if (intento.equalsIgnoreCase(respuestaCorrecta)) { // Ignorar mayúsculas/minúsculas
                 // Verificar si la respuesta es correcta
                 System.out.println("¡Felicidades! Has adivinado correctamente.");
                 continuar = false;
