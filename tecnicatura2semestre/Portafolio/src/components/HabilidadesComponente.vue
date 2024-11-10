@@ -80,6 +80,7 @@ const habilidades = ref([
     font-size: 1.5em;
     font-weight: bold;
 }
+
 .skills{
     display: flex;
     justify-content: space-evenly;
