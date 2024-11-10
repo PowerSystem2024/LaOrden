@@ -15,27 +15,7 @@ const educacion = ref([
     fecha: "2025",
     title: "Tecnicatura Universitaria en Programacion",
     universidad: "Universidad Tecnologica Nacional",
-  },
-  {
-    fecha: "2023",
-    title: "Desarrollador Java",
-    universidad: "Universidad de la Punta",
-  },
-  {
-    fecha: "2019",
-    title: "Arquitecto",
-    universidad: "Universidad Catolica de Santa Fe",
-  },
-  {
-    fecha: "2011",
-    title: "Tecnico en reparacion de computadoras",
-    universidad: "IESA",
-  },
-  {
-    fecha: "2011",
-    title: "Lengua Inglesa",
-    universidad: "Instituto Play and Learn",
-  },
+  }
 ]);
 </script>
 

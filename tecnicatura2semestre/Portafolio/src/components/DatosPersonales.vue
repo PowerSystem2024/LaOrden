@@ -1,10 +1,8 @@
 <script setup>
 
 
-const title = 'Presentación.';
-const nombre = 'Enriquez Leandro.';
-const residencia = 'Posadas, Misiones, Argentina';
-const presentacion = 'Soy arquitecto recibido en la UCSF y estudiante de la Tecnicatura en Programación en la UTN. Mi trayectoria previa me ha dado habilidades valiosas para liderar y coordinar equipos de trabajo, así como una visión integral en la gestión de proyectos. Soy una persona proactiva, siempre con una actitud dispuesta a aprender y mejorar, buscando aportar soluciones innovadoras y efectivas en cada desafío que enfrento.';
+const title = 'La Orden';
+const presentacion = '¡Bienvenidos a La Orden, nuestro espacio de crecimiento y colaboración! Somos un grupo de estudiantes de la Universidad Tecnológica Nacional con una fuerte pasión por la programación, la tecnología, y la innovación. Aquí, nos dedicamos a explorar nuevas ideas, compartir conocimiento y desarrollar proyectos emocionantes que reflejan nuestro aprendizaje y creatividad. A través de nuestros repositorios en GitHub, podrás ver el fruto de nuestro esfuerzo colectivo, desde soluciones tecnológicas innovadoras hasta proyectos desafiantes. Únite a nosotros en este viaje de descubrimiento y aprendizaje continuo, donde cada línea de código es una oportunidad para crecer y cada proyecto es un paso más hacia el futuro. ¡Explora nuestro trabajo y sé parte de La Orden!';
 
 </script>
 
@@ -13,9 +11,7 @@ const presentacion = 'Soy arquitecto recibido en la UCSF y estudiante de la Tecn
     <h1>{{ title }}</h1>
     <div class="card">
 
-      <h2>{{ nombre }}</h2>
       <h4>{{ presentacion }}</h4>
-      <h4>{{ residencia }}</h4>
     </div>
   </section>
 </template>

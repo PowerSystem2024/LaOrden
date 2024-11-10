@@ -2,7 +2,6 @@
 import NavBar from "./components/NavBar.vue";
 import DatosPersonales from "./components/DatosPersonales.vue";
 import Educacion from "./components/EducacionComponente.vue";
-import ExperienciaComponente from "./components/ExperienciaComponente.vue";
 import HabilidadesComponente from "./components/HabilidadesComponente.vue";
 </script>
 
@@ -20,11 +19,6 @@ import HabilidadesComponente from "./components/HabilidadesComponente.vue";
       <h2>Educación.</h2>
       <!--Componente Educación-->
       <Educacion />
-    </section>
-    <section id="experiencia">
-      <h2>Experiencia.</h2>
-      <!--Componente Experiencia-->
-      <ExperienciaComponente />
     </section>
     <section id="habilidades">
       <!--Componente Habilidades-->

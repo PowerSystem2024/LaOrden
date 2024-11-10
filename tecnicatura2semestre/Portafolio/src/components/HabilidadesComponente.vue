@@ -1,109 +1,110 @@
 <script setup>
-import { ref } from "vue";
-const fechaColor = ref([]);
-/*Esta es otra forma de utilizar el arreglo, con el metodo value*/
-fechaColor.value = [
-  { color: "#41516c" },
-  { color: "#FBCA3E" },
-  { color: "#E24A68" },
-  { color: "#1B5F8C" },
-  { color: "#4CADAD" },
-];
-/*Esta es la forma de utilizar el arreglo, sin el metodo value*/
-const experiencias = ref([
-  {
-    categoria: "Lenguajes",
-    id1: "JavaScript. Intermedio.",
-    id2: "Java. Intermedio",
-    id3: "Python. Intermedio",
-    id4: "HTML. Avanzado ",
-    id5: "CSS. Intermedio",
-  },
-  {
-    categoria: "Herramientas",
-    id1: "Git. Avanzado.",
-    id2: "Notion. Avanzado.",
-    id3: "Jira. Avanzado.",
-    id4: "Visual Studio Code. Avanzado.",
-  },
-  {
-    categoria: "Frameworks",
-    id1: "React. Basico.",
-    id2: "Vue js. Intermedio ",
-    id3: "Node js. basico",
-  },
-  {
-    categoria: "Base de datos",
-    id1: "MariaDB. Intermedio",
-    id2: "MySQL. basico",
-  },
-]);
+import img1 from '/src/components/icons/javascript.svg';
+import img2 from '/src/components/icons/java.svg';
+import img3 from '/src/components/icons/python.svg';
+import img4 from '/src/components/icons/vsc.svg';
+import img5 from '/src/components/icons/git.svg';
+import img6 from '/src/components/icons/office.svg';
+import img7 from '/src/components/icons/arg.svg';
+import img8 from '/src/components/icons/eeuu.svg';
+import {ref} from 'vue';
+const habilidades = ref([
+    {
+        id: 1, nombre: 'Lenguajes de Programación', habilidades: [
+            {id: 1, nombre: 'JavaScript', nivel:'Avanzado', icono: img1},
+            {id: 2, nombre: 'Java', nivel:'Intermedio', icono: img2},
+            {id: 3, nombre: 'Python', nivel:'Avanzado', icono: img3}
+        ]
+    },
+    {
+        id: 2, nombre: 'Herramientas y Software', habilidades: [
+            {id: 1, nombre: 'Visual Studio Code', nivel:'Avanzado', icono: img4},
+            {id: 2, nombre: 'Git', nivel:'Avanzado', icono: img5},
+            {id: 3, nombre: 'Paquete Office', nivel:'Avanzado', icono: img6}
+    ]
+    },
+    {
+        id: 3, nombre: 'Idiomas', habilidades: [
+            {id: 1, nombre: 'Español', nivel:'Avanzado', icono: img7},
+            {id: 2, nombre: 'Ingles', nivel:'Basico', icono: img8}
+    ]
+    }
+
+
+])
 </script>
 
 <template>
-  <div class="card">
-    <ul>
-      <li
-        v-for="(item, index) in experiencias"
-        :key="index"
-        :style="{ '--fecha-color': fechaColor[index].color }"
-      >
-        <div class="categoria">{{ item.categoria }}</div>
-        <div class="id1">{{ item.id1 }}</div>
-        <div class="id2">{{ item.id2 }}</div>
-        <div class="id3">{{ item.id3 }}</div>
-        <div class="id4">{{ item.id4 }}</div>
-        <div class="id5">{{ item.id5 }}</div>
-      </li>
-    </ul>
+<div class="skills-contenedor">
+    <div v-for= "habilidad in habilidades" :key="habilidad.id" class="skills-categoria">
+        <h3>{{habilidad.nombre}}</h3>
+        <ul class="skills">
+            <li v-for="habilidad in habilidad.habilidades" :key="habilidad.id" class="skill">
+                <img :src="habilidad.icono" :alt="habilidad.nombre">
+                <span>{{habilidad.nombre}}: {{ habilidad.nivel }}</span>
+            </li>
+
+        </ul>
+    </div>
   </div>
 </template>
 
-<style scoped>
-.card {
-  background:black;
-  background-image: url(./imagenfondo.png);
-  background-size: 120%;
-  border-radius: 30px;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position: 450px 100px;
-  transition: transform 0.8s ease, box-shadow 0.3s ease;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+<style scopped>
+.skills-contenedor{
+    padding: 2rem;
+    background-color: rgb(28, 41, 52);
 }
-
-.card:hover {
-  transform: scale(1.01);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+.skills-categoria{
+    margin-bottom: 20px;
 }
-div {
-  text-align: left;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 5px 12px;
-  margin: 0px;
-  color: white;
+.skills-categoria h3{
+    display: flex;
+    justify-content:left;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: bold;
 }
-.categoria {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.id1,
-.id2,
-.id3,
-.id4,
-.id5 {
-  color: rgb(135, 135, 135);
+.skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(241, 245, 243, 0.856);
+    padding: 0.3em;
+    border-radius:8px;
+    box-shadow: 0px 4px 12px rgba(2, 151, 151, 0.963);
+    flex: 1 1 200px;
+    max-width: 250px;
 }
-ul {
-  margin: 0px;
-  padding: 20px;
+.skill:hover{
+    background-color: rgba(2, 151, 151, 0.963);
 }
-li {
-  margin: 0px 0px 20px 0px;
+.skill img{
+    width: 35px;
+    height: 35px;
+}
+.skill span{
+    font-size: 1em;
+    color: #333;
+}
+.skill:hover{
+    font-size: 1.3em;
+    transition: 2s ease;
+}
+@media (max-width: 768px){
+    .skills-categoria h3{
+        justify-content: center;
+    }
+    .skill{
+        justify-content: center;
+    }
 }
 </style>
