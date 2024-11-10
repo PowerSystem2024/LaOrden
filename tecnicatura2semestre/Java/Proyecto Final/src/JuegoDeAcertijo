@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class JuegoDeAcertijo {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String acertijo = "El hombre que lo vendió no lo quería. El hombre que lo compró no lo necesitaba. El hombre que lo usó no lo conocía. ¿Qué soy? (Poner respuesta en minúsculas)";
+        String respuestaCorrecta = "un ataud";
+        String intento;
+        boolean continuar = true;
+
+        System.out.println("Bienvenido al juego de acertijos.");
+        
+        do {
+            // Mostrar acertijo
+            System.out.println(acertijo);
+            
+            // Pedir al usuario que adivine
+            System.out.print("Introduce tu respuesta (escribe 'salir' para rendirte): ");
+            intento = scanner.nextLine();
+            
+            // Verificar si el usuario quiere salir
+            if (intento.equalsIgnoreCase("salir")) { // Ignorar mayúsculas/minúsculas
+                System.out.println("Has decidido salir del juego.");
+                continuar = false;
+            } else if (intento.equalsIgnoreCase(respuestaCorrecta)) { // Ignorar mayúsculas/minúsculas
+                // Verificar si la respuesta es correcta
+                System.out.println("¡Felicidades! Has adivinado correctamente.");
+                continuar = false;
+            } else {
+                System.out.println("Lo siento, esa no es la respuesta correcta. Intenta de nuevo.");
+                continuar = true;
+            }
+        } while (continuar);
+        
+        scanner.close();
+    }
+}

@@ -1,0 +1,17 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>100</x><y>160</y><w>210</w><h>80</h></coordinates><panel_attributes>_FiguraGeometrica_
+--
+-alto
+-ancho
+--
++area() &lt;abstract&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>500</x><y>160</y><w>210</w><h>80</h></coordinates><panel_attributes>_Color_
+--
++color
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>460</y><w>210</w><h>80</h></coordinates><panel_attributes>_Cuadrado_
+--
++area() &lt;implementacion&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>460</y><w>210</w><h>80</h></coordinates><panel_attributes>_Rectangulo_
+--
++area() &lt;implementacion&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>230</y><w>100</w><h>250</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>230</y><w>100</w><h>250</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>230</y><w>430</w><h>250</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>410;10;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>230</y><w>430</w><h>250</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>410;230;10;10</additional_attributes></element></diagram>
